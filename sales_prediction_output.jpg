@@ -1,0 +1,120 @@
+============================================================       CUSTOMER SEGMEN
+============================================================
+STEP 1: DATA COLLECTION
+Dataset collected successfully.
+
+First 10 records:
+   CustomerID  Age  AnnualIncome  SpendingScore
+0           1   22         20000             85
+1           2   25         25000             90
+2           3   28         30000             78
+3           4   30         35000             75
+4           5   35         40000             70
+5           6   40         45000             65
+6           7   42         50000             60
+7           8   45         55000             55
+8           9   50         60000             50
+9          10   52         65000             45
+
+Dataset Shape: (20, 4)
+
+STEP 2: DATA PREPROCESSING
+
+Missing Values:
+CustomerID       0
+Age              0
+AnnualIncome     0
+SpendingScore    0
+dtype: int64
+
+Data preprocessing completed.
+
+STEP 3: EXPLORATORY DATA ANALYSIS
+
+Statistical Summary:
+       CustomerID       Age  AnnualIncome  SpendingScore
+count    20.00000  20.00000     20.000000      20.000000
+mean     10.50000  39.20000  44900.000000      65.300000
+std       5.91608  11.33973  16593.911375      15.921187
+min       1.00000  22.00000  20000.000000      35.000000
+25%       5.75000  29.50000  32250.000000      54.250000
+50%      10.50000  39.50000  44000.000000      66.500000
+75%      15.25000  48.50000  55750.000000      76.500000
+max      20.00000  60.00000  80000.000000      90.000000
+
+Average Age: 39.2
+Average Annual Income: 44900.0
+Average Spending Score: 65.3
+
+STEP 4: FEATURE ENGINEERING
+
+Input Features:
+   Age  AnnualIncome  SpendingScore
+0   22         20000             85
+1   25         25000             90
+2   28         30000             78
+3   30         35000             75
+4   35         40000             70
+
+Features standardized successfully.
+
+STEP 5: DATA PREPARATION
+Total customer records: 20
+Features used: Age, AnnualIncome, SpendingScore
+Data preparation completed.
+
+STEP 6: MODEL SELECTION
+K-Means Clustering model selected.
+Number of clusters: 3
+
+STEP 7: MODEL TRAINING
+Model trained successfully.
+
+STEP 8: CUSTOMER SEGMENTATION
+
+Customer Cluster Results:
+    CustomerID  Age  AnnualIncome  SpendingScore  Cluster
+0            1   22         20000             85        0
+1            2   25         25000             90        0
+2            3   28         30000             78        0
+3            4   30         35000             75        0
+4            5   35         40000             70        2
+5            6   40         45000             65        2
+6            7   42         50000             60        2
+7            8   45         55000             55        2
+8            9   50         60000             50        1
+9           10   52         65000             45        1
+10          11   23         22000             88        0
+11          12   27         28000             82        0
+12          13   32         33000             76        0
+13          14   36         38000             72        2
+14          15   39         43000             68        2
+15          16   44         48000             62        2
+16          17   48         53000             58        2
+17          18   51         58000             52        1
+18          19   55         70000             40        1
+19          20   60         80000             35        1
+
+STEP 9: CLUSTER EVALUATION
+Number of clusters formed: 3
+Inertia: 7.97
+Cluster evaluation completed.
+
+STEP 10: CLUSTER SUMMARY
+               Age  ...  NumberOfCustomers
+Cluster             ...
+0        26.714286  ...                  7
+1        53.600000  ...                  5
+2        41.125000  ...                  8
+
+[3 rows x 4 columns]
+
+STEP 11: CUSTOMER GROUPS
+Cluster 0 -> 7 customers
+Cluster 1 -> 5 customers
+Cluster 2 -> 8 customers
+
+Customer groups created successfully.
+
+STEP 12: NEW CUSTOMER SEGMENT PREDICTION
+/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/sklearn/utils/validation.py:2691: UserWarning:
