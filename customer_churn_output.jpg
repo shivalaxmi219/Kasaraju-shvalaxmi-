@@ -1,0 +1,121 @@
+============================================================       SALES FORECASTING SYSTEM
+============================================================
+STEP 1: DATA COLLECTION
+Sales dataset collected successfully.
+
+First 10 records:
+   Month  Sales
+0      1    120
+1      2    135
+2      3    128
+3      4    145
+4      5    150
+5      6    160
+6      7    155
+7      8    170
+8      9    180
+9     10    175
+
+Dataset Shape: (20, 2)
+
+STEP 2: DATA PREPROCESSING
+
+Missing Values:
+Month    0
+Sales    0
+dtype: int64
+
+Data preprocessing completed.
+
+STEP 3: EXPLORATORY DATA ANALYSIS
+
+Statistical Summary:
+          Month       Sales
+count  20.00000   20.000000
+mean   10.50000  185.150000
+std     5.91608   39.435857
+min     1.00000  120.000000
+25%     5.75000  153.750000
+50%    10.50000  185.000000
+75%    15.25000  216.250000
+max    20.00000  250.000000
+
+Average Sales: 185.15
+Minimum Sales: 120
+Maximum Sales: 250
+
+STEP 4: TIME SERIES COMPONENTS
+Time variable: Month
+Target variable: Sales
+Trend analysis completed.
+
+STEP 5: FEATURE SELECTION
+Selected Feature: Month
+Target Variable: Sales
+
+Input Features:
+   Month
+0      1
+1      2
+2      3
+3      4
+4      5
+
+Target Values:
+0    120
+1    135
+2    128
+3    145
+4    150
+Name: Sales, dtype: int64
+
+STEP 6: DATA SPLITTING
+Training records: 16
+Testing records : 4
+
+STEP 7: MODEL SELECTION
+Linear Regression model selected.
+
+STEP 8: MODEL TRAINING
+Model trained successfully.
+Model Coefficient: 6.55
+Model Intercept: 116.1
+
+STEP 9: SALES PREDICTION
+Actual Sales:
+[230, 240, 235, 250]
+
+Predicted Sales:
+[np.float64(227.4), np.float64(233.95), np.float64(240.49), np.float64(247.04)]
+
+STEP 10: MODEL EVALUATION
+Mean Absolute Error : 4.28
+Mean Squared Error  : 20.58
+Root Mean Square Error: 4.54
+
+STEP 11: FUTURE SALES FORECAST
+/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
+  warnings.warn(
+Next Month: 21
+Forecasted Sales: 253.59
+
+STEP 12: NEW MONTH SALES PREDICTION
+/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.13/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
+  warnings.warn(
+New Month: 22
+Predicted Sales: 260.14
+
+STEP 13: RESULT
+Sales forecasting completed successfully.
+The model can predict future sales based on
+previous monthly sales data.
+
+STEP 14: CONCLUSION
+Machine Learning was used for sales forecasting.
+Linear Regression was used as the prediction model.
+Historical sales data was used for training.
+The system can help businesses plan future sales.
+
+============================================================       PROJECT COMPLETED SUCCESSFULLY
+============================================================
+[Program finished]
