@@ -1,0 +1,134 @@
+============================================================              FAKE NEWS DETECTION SYSTEM
+============================================================
+STEP 1: DATA COLLECTION
+Dataset collected successfully.
+
+First 10 records:
+                                              News Label
+0        Government announces new education policy  Real
+1  Scientists discover new method to treat disease  Real
+2       Local school opens new computer laboratory  Real
+3        University announces examination schedule  Real
+4      Government launches new student scholarship  Real
+5     Weather department issues heavy rain warning  Real
+6      Researchers publish study on climate change  Real
+7     City hospital opens new emergency department  Real
+8    Election commission announces voting schedule  Real
+9      Bank introduces new digital payment service  Real
+
+Dataset Shape: (20, 2)
+
+STEP 2: DATA PREPROCESSING
+
+Missing Values:
+News     0
+Label    0
+dtype: int64
+
+Text converted to lowercase.
+Data preprocessing completed.
+
+STEP 3: EXPLORATORY DATA ANALYSIS
+
+News Distribution:
+Label
+Real    10
+Fake    10
+Name: count, dtype: int64
+
+Average News Length:
+44.05
+
+Maximum News Length:
+52
+
+Minimum News Length:
+36
+
+STEP 4: FEATURE ENGINEERING
+
+Input Feature:
+0          government announces new education policy
+1    scientists discover new method to treat disease
+2         local school opens new computer laboratory
+3          university announces examination schedule
+4        government launches new student scholarship
+Name: News, dtype: str
+
+Target Variable:
+0    Real
+1    Real
+2    Real
+3    Real
+4    Real
+Name: Label, dtype: str
+
+TF-IDF feature extraction completed.
+Number of features: 85
+
+STEP 5: DATA SPLITTING
+Training records: 16
+Testing records : 4
+
+STEP 6: MODEL SELECTION
+Random Forest Classifier selected.
+
+STEP 7: MODEL TRAINING
+Model trained successfully.
+
+STEP 8: PREDICTION
+Actual Results:
+<StringArray>
+['Fake', 'Fake', 'Real', 'Real']
+Length: 4, dtype: str
+
+Predicted Results:
+['Fake' 'Fake' 'Real' 'Fake']
+
+STEP 9: MODEL EVALUATION
+Accuracy  : 75.0 %
+Precision : 83.33 %
+Recall    : 75.0 %
+F1 Score  : 73.33 %
+
+STEP 10: CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        Fake       0.67      1.00      0.80         2
+        Real       1.00      0.50      0.67         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+
+STEP 11: CONFUSION MATRIX
+[[2 0]
+ [1 1]]
+
+Confusion Matrix Format:
+Rows    = Actual
+Columns = Predicted
+[[True Fake, False Real],
+ [False Fake, True Real]]
+
+STEP 12: NEW NEWS PREDICTION
+
+News Details:
+Scientists announce a new research study about health
+
+FINAL NEWS PREDICTION: Real
+
+STEP 13: RESULT
+Fake news detection completed successfully.
+The system classified the news using Machine Learning.
+
+STEP 14: CONCLUSION
+Machine Learning was used for fake news detection.
+TF-IDF was used for text feature extraction.
+Random Forest Classifier was used for prediction.
+The system can help identify potentially fake news.
+
+============================================================          PROJECT COMPLETED SUCCESSFULLY
+============================================================
+[Program finished]
